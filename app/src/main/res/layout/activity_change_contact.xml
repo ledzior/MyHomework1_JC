@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".change_contact">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="395dp"
+        android:layout_height="659dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="58dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/contact1"
+            android:layout_width="379dp"
+            android:layout_height="100dp"
+
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/Contact1"
+            app:layout_constraintBottom_toTopOf="@+id/contact2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="79dp"
+            tools:layout_conversion_absoluteWidth="395dp" />
+
+        <RadioButton
+            android:id="@+id/contact2"
+            android:layout_width="379dp"
+            android:layout_height="100dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/Contact2"
+            app:layout_constraintBottom_toTopOf="@+id/contact3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/contact1"
+            app:layout_constraintTop_toBottomOf="@+id/contact1"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="379dp" />
+
+        <RadioButton
+            android:id="@+id/contact3"
+            android:layout_width="379dp"
+            android:layout_height="100dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/Contact3"
+            app:layout_constraintBottom_toTopOf="@+id/contact4"
+            app:layout_constraintStart_toStartOf="@+id/contact2"
+            app:layout_constraintTop_toBottomOf="@+id/contact2"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="379dp" />
+
+        <RadioButton
+            android:id="@+id/contact4"
+            android:layout_width="379dp"
+            android:layout_height="100dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/Contact4"
+            app:layout_constraintBottom_toTopOf="@+id/contact5"
+            app:layout_constraintStart_toStartOf="@+id/contact3"
+            app:layout_constraintTop_toBottomOf="@+id/contact3"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="379dp" />
+
+        <RadioButton
+            android:id="@+id/contact5"
+            android:layout_width="379dp"
+            android:layout_height="100dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/Contact5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/contact4"
+            app:layout_constraintTop_toBottomOf="@+id/contact4"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="379dp" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="675dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="setContactClick"
+        android:text="OK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
